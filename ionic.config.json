@@ -1,0 +1,7 @@
+{
+  "name": "lens",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
