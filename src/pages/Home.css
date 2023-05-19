@@ -1,0 +1,14 @@
+.tool-bar {
+  --background: none;
+  --border-style: none
+}
+
+.search-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 90%;
+  transform: translateY(-50%);
+  padding: 7%;
+  transition: ease-in-out 300ms 60%;
+}

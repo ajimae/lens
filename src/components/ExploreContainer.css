@@ -1,24 +1,129 @@
+ion-content {
+  --background: #000000;
+  /* --background: cyan; */
+  /* --background: rgb(127, 255, 212); */
+  /* --background: #c7fec2;* */
+  /* --background: #9afff2;* */
+  /* --background: #efffab;* */
+  /* --background: #151827; */
+  /* --background: #d6c1ff; */
+  /* --background: #feacf7; */
+}
+
 .container {
-  text-align: center;
+  text-align: start;
   position: absolute;
   left: 0;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+  padding: 7%;
+  z-index: -999;
+  /* background-color: #8c98ad; */
 }
 
 .container strong {
-  font-size: 20px;
+  font-size: 30px;
   line-height: 26px;
 }
 
 .container p {
   font-size: 16px;
   line-height: 22px;
-  color: #8c8c8c;
-  margin: 0;
+  color: #8c98ad;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
-.container a {
-  text-decoration: none;
+.container p strong {
+  font-size: 18px;
 }
+
+.container p:nth-of-type(2) {
+  font-size: 14px;
+  color: #000000;
+  /* padding-left: 5%; */
+  /* padding-right: 5%; */
+}
+
+.word-phonetics {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.word-phonetics p {
+  margin-right: 3%;
+}
+
+.word-phonetics .volume-icon {
+  width: 22px;
+  height: 22px;
+  color: #8c98ad;
+}
+
+/* customize ionic button */
+ion-button {
+  --border-radius: 14px;
+  --padding-top: 0;
+  --padding-bottom: 0;
+  --padding-start: 0em;
+  --padding-end: 0em;
+  /* --transition: background-color, opacity 100ms linear; */
+  /* margin-inline: auto;
+  margin-top: auto;
+  margin-bottom: auto; */
+  height: 23px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0px;
+}
+
+.definition-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.definition-container .definition-text {
+  font-size: 14px;
+  padding-left: 2%;
+  padding-right: 2%;
+  /* font-weight: 500; */
+}
+
+.word-meta {
+  font-size: 14px;
+  padding-top: 3%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.example {
+  padding-bottom: 3%;
+  font-style: italic;
+  color: #8c98ad;
+}
+
+.synonym {
+  padding-bottom: 4%;
+}
+
+/* 
+.word-example {
+  font-size: 14px;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.word-example p:nth-child(1) {
+  /* font-size: 14px; */
+  /* font-style: italic;
+}
+
+.word-example p:nth-child(2) {
+  /* font-size: 14px; */
+  /* font-weight: 400;
+}  */
